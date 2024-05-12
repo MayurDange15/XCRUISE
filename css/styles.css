@@ -1,0 +1,375 @@
+body{
+    margin: 0px;
+}
+
+/* Navbar code start */
+
+.navbar{
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(0, 0, 51);
+
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu ul{
+    padding-left: 0px;
+}
+
+.menu ul li{
+    display: inline;
+    margin: 10px;
+    /* padding: 10px; */
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar code end */
+/* Hero code start */
+
+.hero{
+    background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/hero-cruise.png?raw=true");
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1{
+    margin-bottom: 0px;
+}
+
+.hero p{
+    margin-bottom: 10px;
+}
+
+.hero button{
+    display: inline;
+    background-color: orangered;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Hero code end */
+/* Discover section header code start */
+
+.vertical{
+    margin: 0px 10px 0px 40px; /* top, right, bottom, left */
+    border: 3px solid orange;
+    height: 135px;
+    float: left;
+}
+
+.popular{
+    display: flex;
+}
+
+.pills{
+    display: flex;
+    align-items: center;
+}
+
+.pill{
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+.pill img{
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    border: 10px solid white;
+}
+
+.pill span{
+    padding-right: 10px;
+}
+
+/* Discover section header code end */
+/* Discover section banner code start */
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    width: 95vw; /* Set the width of the image to 95% of the viewport width */
+    max-width: calc(100vw - 40px); /* Limit the maximum width to 100% of the viewport width minus 40px (20px padding on each side) */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 20px auto; /* Center the image horizontally */
+}
+
+.card-label{
+    position: absolute; /* Set position to absolute */
+    bottom: 0; /* Align to the bottom of the container */
+    left: 40px; /* Align to the left of the container */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around the text */   
+}
+
+.card-label:nth-child(even){
+    bottom: -20px;
+}
+
+.bookmark {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/save-icon.png?raw=true');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Discover section banner code end */
+/* Discover section cards code start */
+
+.grid-container{
+    position: relative;
+    display: grid;
+    width: 95vw;
+    margin: 20px auto;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+}
+
+.card{
+    position: relative;
+    cursor: pointer;
+}
+
+.grid-container img{
+    width: 100%; /* Set the width of the images to 100% of their container */
+    height: 100%; /* Set the height of the images to 100% of their container */
+    object-fit: cover; /* Ensure that the images cover the entire space of their container */
+}
+
+.card .bookmark{
+    right: 10px;
+}
+
+div.card-label{
+    left: 0px;
+}
+
+div.card-label h4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.card-label h5{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Discover section cards code end */
+/* Contact information code start */
+
+#contact > h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#contact > h3 > span{
+    display:inline-block;
+    border-bottom:4px solid orange;
+    padding-bottom:8px;
+}
+
+.contact_info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    width: 95vw;
+}
+
+.contact_information, .hours_of_operation{
+    width: 50vw;
+    height: auto;
+    margin: 10px;
+    vertical-align: top;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.contact_information h4, .hours_of_operation h4{
+    margin: 10px auto;
+}
+
+.contact_information p, .hours_of_operation p{
+    margin: 0;
+}
+
+/* Contact information code end */
+/* Footer code start */
+
+.footer{
+    background: rgb(0, 0, 51);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+.footer div h4{
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.footer div p{
+    margin: 3px;
+}
+
+.social-icons img{
+    width: 20px;
+    height: 20px;
+}
+
+.horizontal{
+    background-color: rgb(0, 0, 51);
+    margin: 0;
+    border-bottom-width:0;
+}
+
+.footer_rights{
+    background: rgb(0, 0, 51);
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+/* Footer code end */
+/* Responsive code start */
+
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+    }
+    
+    .vertical{
+        display: none;
+    }
+
+    .heading h2{
+        text-align: center;
+    }
+
+    .heading p{
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .popular{
+        justify-content: center;
+        font-size: smaller;
+    }
+
+    .pill{
+        margin-left: 3px;
+    }
+
+    .card-label{
+        font-size: smaller;
+        left: 20px;
+    }
+
+    .card-label:nth-child(odd){
+        font-size: smaller;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .contact_info{
+        flex-direction: column;
+    }
+
+    .contact_information, .hours_of_operation{
+        width: 95vw;
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading h2{
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .popular{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .popular h4{
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .pills{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .pill{
+        width: 200px;
+        justify-content: space-around;
+    }
+
+    .pill img{
+        border-top-width: 8px;
+        margin-top: 2px;
+        border-bottom-width: 8px;
+        margin-bottom: 2px;
+    }
+
+    .card-label{
+        font-size: smaller;
+    }
+
+    .card-label:nth-child(odd){
+        font-size: smaller;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+}
+
+/* Responsive code end */
